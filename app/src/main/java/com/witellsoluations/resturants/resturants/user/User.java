@@ -44,7 +44,8 @@ public class User extends AppCompatActivity {
         mRecyclerView.setAdapter(mAdapter);
 
 
-
+        gridview.setNumColumns(3);
+        gridview.setColumnWidth(1);
         gridview.setAdapter(new ImageAdapter(this));
     }
 
