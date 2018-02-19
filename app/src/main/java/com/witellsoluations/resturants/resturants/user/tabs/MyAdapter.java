@@ -1,4 +1,4 @@
-package com.witellsoluations.resturants.resturants.tabs;
+package com.witellsoluations.resturants.resturants.user.tabs;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import com.witellsoluations.resturants.resturants.R;
  * Created by User on 2/15/2018.
  */
 
-public class InvoiceAdapter extends RecyclerView.Adapter<InvoiceAdapter.ViewHolder> {
+public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     private String[] mDataset;
 
@@ -23,29 +23,25 @@ public class InvoiceAdapter extends RecyclerView.Adapter<InvoiceAdapter.ViewHold
     public static class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
 
-        public TextView mId;
-        public TextView mProduct;
-        public TextView mPrice;
+        public TextView mTextView;
 
         public ViewHolder(View v) {
             super(v);
-            mId = v.findViewById(R.id.tv_id);
-            mProduct = v.findViewById(R.id.tv_product);
-            mPrice = v.findViewById(R.id.tv_price);
+            mTextView = v.findViewById(R.id.name);
         }
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public InvoiceAdapter(String[] myDataset) {
+    public MyAdapter(String[] myDataset) {
         mDataset = myDataset;
     }
 
 
     @Override
-    public InvoiceAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public MyAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // create a new view
         View v =  LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.invoice_view, parent, false);
+                .inflate(R.layout.my_text_view, parent, false);
         // set the view's size, margins, paddings and layout parameters
 
         ViewHolder vh = new ViewHolder(v);
@@ -53,16 +49,15 @@ public class InvoiceAdapter extends RecyclerView.Adapter<InvoiceAdapter.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(InvoiceAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(MyAdapter.ViewHolder holder, int position) {
 
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
-
-        //holder.mId.setText(mDataset[position]);
+        holder.mTextView.setText(mDataset[position]);
     }
 
     @Override
     public int getItemCount() {
-        return 5;
+        return mDataset.length;
     }
 }

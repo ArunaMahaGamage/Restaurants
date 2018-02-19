@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
-    tools:context="com.witellsoluations.resturants.resturants.tabs.Tab3">
+    tools:context=".user.tabs.Tab3">
 
     <!-- TODO: Update blank fragment layout -->
 

@@ -1,4 +1,4 @@
-package com.witellsoluations.resturants.resturants.tabs;
+package com.witellsoluations.resturants.resturants.user.tabs;
 
 import android.content.Context;
 import android.net.Uri;

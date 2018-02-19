@@ -1,22 +1,22 @@
-package com.witellsoluations.resturants.resturants;
+package com.witellsoluations.resturants.resturants.user;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.witellsoluations.resturants.resturants.tabs.Tab1;
-import com.witellsoluations.resturants.resturants.tabs.Tab2;
-import com.witellsoluations.resturants.resturants.tabs.Tab3;
+import com.witellsoluations.resturants.resturants.user.tabs.Tab1;
+import com.witellsoluations.resturants.resturants.user.tabs.Tab2;
+import com.witellsoluations.resturants.resturants.user.tabs.Tab3;
 
 /**
  * Created by aruna on 2/18/18.
  */
 
-public class PagerAdapter extends FragmentStatePagerAdapter {
+public class UserPagerAdapter extends FragmentStatePagerAdapter {
 
     int mNoOfTabs;
 
-    public PagerAdapter(FragmentManager fragmentManager, int numberOfTabs) {
+    public UserPagerAdapter(FragmentManager fragmentManager, int numberOfTabs) {
         super(fragmentManager);
 
         this.mNoOfTabs = numberOfTabs;

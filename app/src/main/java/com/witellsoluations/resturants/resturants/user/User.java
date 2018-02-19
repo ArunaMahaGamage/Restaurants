@@ -9,11 +9,10 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.widget.TextView;
 
-import com.witellsoluations.resturants.resturants.PagerAdapter;
 import com.witellsoluations.resturants.resturants.R;
-import com.witellsoluations.resturants.resturants.tabs.Tab1;
-import com.witellsoluations.resturants.resturants.tabs.Tab2;
-import com.witellsoluations.resturants.resturants.tabs.Tab3;
+import com.witellsoluations.resturants.resturants.user.tabs.Tab1;
+import com.witellsoluations.resturants.resturants.user.tabs.Tab2;
+import com.witellsoluations.resturants.resturants.user.tabs.Tab3;
 
 public class User extends AppCompatActivity implements Tab1.OnFragmentInteractionListener, Tab2.OnFragmentInteractionListener, Tab3.OnFragmentInteractionListener{
 
@@ -59,8 +58,8 @@ public class User extends AppCompatActivity implements Tab1.OnFragmentInteractio
 
     void viewPager() {
         viewPager = (ViewPager) findViewById(R.id.pager);
-        PagerAdapter pagerAdapter = new PagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
-        viewPager.setAdapter(pagerAdapter);
+        UserPagerAdapter userPagerAdapter = new UserPagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
+        viewPager.setAdapter(userPagerAdapter);
         viewPager.setOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
 
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
