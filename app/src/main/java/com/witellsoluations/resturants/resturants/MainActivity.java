@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.witellsoluations.resturants.resturants.chef.Chef;
 import com.witellsoluations.resturants.resturants.user.User;
 
 public class MainActivity extends AppCompatActivity {
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             Intent userIntent = new Intent(this, User.class);
             startActivity(userIntent);
         } else if (username.equals("chef")) {
-            Intent userIntent = new Intent(this, User.class);
+            Intent userIntent = new Intent(this, Chef.class);
             startActivity(userIntent);
         }
     }

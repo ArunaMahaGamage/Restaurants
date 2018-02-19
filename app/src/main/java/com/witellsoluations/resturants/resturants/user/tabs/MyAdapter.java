@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.witellsoluations.resturants.resturants.R;
@@ -24,10 +25,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         // each data item is just a string in this case
 
         public TextView mTextView;
+        public ImageView mCatergory;
 
         public ViewHolder(View v) {
             super(v);
             mTextView = v.findViewById(R.id.name);
+            mCatergory = v.findViewById(R.id.iv_catergory);
+
         }
     }
 
@@ -54,6 +58,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
         holder.mTextView.setText(mDataset[position]);
+        holder.mCatergory.setImageResource(R.drawable.alb);
     }
 
     @Override

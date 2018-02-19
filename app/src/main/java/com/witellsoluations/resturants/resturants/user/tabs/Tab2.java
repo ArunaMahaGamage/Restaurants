@@ -80,7 +80,7 @@ public class Tab2 extends Fragment {
         gridview = view.findViewById(R.id.gv_status);
         gridview.setNumColumns(3);
         gridview.setColumnWidth(1);
-        gridview.setAdapter(new ImageAdapter(getContext()));
+        gridview.setAdapter(new StatusAdapter(getContext()));
 
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
