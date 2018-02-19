@@ -17,7 +17,9 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="TitleBar" />
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/productslist"
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout

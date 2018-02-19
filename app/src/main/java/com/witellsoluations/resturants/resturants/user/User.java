@@ -1,10 +1,13 @@
 package com.witellsoluations.resturants.resturants.user;
 
+import android.graphics.Color;
 import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.widget.TextView;
 
 import com.witellsoluations.resturants.resturants.PagerAdapter;
 import com.witellsoluations.resturants.resturants.R;
@@ -16,6 +19,7 @@ public class User extends AppCompatActivity implements Tab1.OnFragmentInteractio
 
     TabLayout tabLayout;
     ViewPager viewPager;
+    TextView tv_title;
 
     /*RecyclerView mRecyclerView;
     private RecyclerView.LayoutManager mLayoutManager;
@@ -34,11 +38,13 @@ public class User extends AppCompatActivity implements Tab1.OnFragmentInteractio
 
     void initUI() {
         tabLayout = (TabLayout) findViewById(R.id.tablayout);
+        tv_title = (TextView) findViewById(R.id.tv_title);
         /*mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
         gridview = (GridView) findViewById(R.id.gridview);*/
 //        recyclerView();
 
         tabLayout();
+        title();
 
     }
 
@@ -73,6 +79,13 @@ public class User extends AppCompatActivity implements Tab1.OnFragmentInteractio
 
             }
         });
+    }
+
+    void title() {
+        tv_title.setText("Food Order System");
+        tv_title.setTextSize(20);
+        tv_title.setTextColor(Color.BLUE);
+        tv_title.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL);
     }
 
     void recyclerView() {
