@@ -1,6 +1,7 @@
-package com.witellsoluations.resturants.resturants.user;
+package com.witellsoluations.resturants.resturants.user.tabs;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -38,6 +39,8 @@ public class ImageAdapter extends BaseAdapter{
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
+
+    //    view = LayoutInflater.from(context).inflate(R.layout., viewGroup, false);
         ImageView imageView;
         if (view == null) {
             // if it's not recycled, initialize some attributes
@@ -55,16 +58,27 @@ public class ImageAdapter extends BaseAdapter{
 
     // references to our images
     private Integer[] mThumbIds = {
-            R.drawable.sample_2, R.drawable.sample_3,
-            R.drawable.sample_4, R.drawable.sample_5,
-            R.drawable.sample_6, R.drawable.sample_7,
-            R.drawable.sample_0, R.drawable.sample_1,
-            R.drawable.sample_2, R.drawable.sample_3,
-            R.drawable.sample_4, R.drawable.sample_5,
-            R.drawable.sample_6, R.drawable.sample_7,
-            R.drawable.sample_0, R.drawable.sample_1,
-            R.drawable.sample_2, R.drawable.sample_3,
-            R.drawable.sample_4, R.drawable.sample_5,
+            R.drawable.pizza,
+            R.drawable.pizza, R.drawable.pizza,
+            R.drawable.pizza, R.drawable.pizza,
+            R.drawable.pizza, R.drawable.pizza,
+            R.drawable.pizza, R.drawable.pizza,
+            R.drawable.pizza, R.drawable.pizza,
+            R.drawable.pizza, R.drawable.pizza,
+            R.drawable.pizza, R.drawable.pizza,
+            R.drawable.pizza, R.drawable.pizza,
+            R.drawable.pizza, R.drawable.pizza,
+            R.drawable.pizza, R.drawable.pizza,
             R.drawable.sample_6, R.drawable.sample_7
     };
+
+    /*private class ViewHolder {
+        TextView itemName;
+        TextView itemDescription;
+
+        public ViewHolder(View view) {
+            itemName = (TextView)view.findViewById(R.id.text_view_item_name);
+            itemDescription = (TextView) view.findViewById(R.id.text_view_item_description);
+        }
+    }*/
 }

@@ -13,7 +13,6 @@ import android.widget.GridView;
 import android.widget.Toast;
 
 import com.witellsoluations.resturants.resturants.R;
-import com.witellsoluations.resturants.resturants.user.ImageAdapter;
 
 
 /**

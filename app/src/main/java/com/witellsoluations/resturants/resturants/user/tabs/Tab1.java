@@ -14,7 +14,6 @@ import android.widget.GridView;
 import android.widget.Toast;
 
 import com.witellsoluations.resturants.resturants.R;
-import com.witellsoluations.resturants.resturants.user.ImageAdapter;
 
 
 /**
@@ -96,9 +95,9 @@ public class Tab1 extends Fragment {
         mRecyclerView.setAdapter(mAdapter);
 
 
-        gridview.setNumColumns(3);
-        gridview.setColumnWidth(1);
-        gridview.setAdapter(new ImageAdapter(getContext()));
+        /*gridview.setNumColumns(1);
+        gridview.setColumnWidth(1);*/
+        gridview.setAdapter(new ProductsAdapter(getContext()));
 
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
