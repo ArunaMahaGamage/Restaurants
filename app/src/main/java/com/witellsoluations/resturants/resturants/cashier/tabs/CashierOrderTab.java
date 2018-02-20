@@ -81,7 +81,7 @@ public class CashierOrderTab extends Fragment {
         gridview = view.findViewById(R.id.gv_status);
         gridview.setNumColumns(1);
         gridview.setColumnWidth(1);
-        gridview.setAdapter(new WaiterOrderAdapter(getContext()));
+        gridview.setAdapter(new CashierOrderAdapter(getContext()));
 
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
