@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.witellsoluations.resturants.resturants.chef.Chef;
 import com.witellsoluations.resturants.resturants.user.User;
+import com.witellsoluations.resturants.resturants.waiter.Waiter;
 
 public class MainActivity extends AppCompatActivity {
     Button btn_sigin_in;
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     void siginIn(String username) {
 
         if (username.equals("waiter")) {
-            Intent userIntent = new Intent(this, User.class);
+            Intent userIntent = new Intent(this, Waiter.class);
             startActivity(userIntent);
         } else if (username.equals("chasier")) {
             Intent userIntent = new Intent(this, User.class);

@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".user.User" />
-        <activity android:name=".chef.Chef"></activity>
+        <activity android:name=".chef.Chef" />
+        <activity android:name=".waiter.Waiter"></activity>
     </application>
 
 </manifest>
