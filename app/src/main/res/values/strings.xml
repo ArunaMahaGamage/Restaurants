@@ -12,4 +12,11 @@
     <string name="tab3">Invoice</string>
 
     <string name="productslist">Products</string>
+
+    <string name="Waiter_view">Waiter</string>
+    <string name="cashier_view">Cashier</string>
+
+    <string name="Waiter_conform">Conform</string>
+    <string name="Waiter_reorder">Re-Order</string>
+    <string name="Waiter_cancel">Cancel</string>
 </resources>

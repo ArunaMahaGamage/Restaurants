@@ -50,13 +50,15 @@ public class WaiterOrderAdapter extends BaseAdapter{
 
             holder.tv_product_name = (TextView)view.findViewById(R.id.tv_product_name);
             holder.iv_food = (ImageView) view.findViewById(R.id.iv_food);
-            holder.tv_description = (TextView) view.findViewById(R.id.tv_description);
+            holder.tv_availability = (TextView) view.findViewById(R.id.tv_availability);
+            holder.tv_state = (TextView) view.findViewById(R.id.tv_state);
 
 
 
             holder.tv_product_name.setText("Pitza");
             holder.iv_food.setImageResource(mThumbIds[i]);
-            holder.tv_description.setText("Status : " + "Process");
+            holder.tv_availability.setText("availability : " + "available");
+            holder.tv_state.setText("Status : " + "Process");
 
         } else {
            // imageView = (ImageView) view;
@@ -80,7 +82,8 @@ public class WaiterOrderAdapter extends BaseAdapter{
     private class ViewHolder {
         TextView tv_product_name;
         ImageView iv_food;
-        TextView tv_description;
+        TextView tv_availability;
+        TextView tv_state;
 
         public ViewHolder(View view) {
 

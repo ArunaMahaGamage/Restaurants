@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".user.User" />
         <activity android:name=".chef.Chef" />
-        <activity android:name=".waiter.Waiter"></activity>
+        <activity android:name=".waiter.Waiter" />
+        <activity android:name=".cashier.Cashier"></activity>
     </application>
 
 </manifest>

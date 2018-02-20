@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.witellsoluations.resturants.resturants.cashier.Cashier;
 import com.witellsoluations.resturants.resturants.chef.Chef;
 import com.witellsoluations.resturants.resturants.user.User;
 import com.witellsoluations.resturants.resturants.waiter.Waiter;
@@ -53,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
         if (username.equals("waiter")) {
             Intent userIntent = new Intent(this, Waiter.class);
             startActivity(userIntent);
-        } else if (username.equals("chasier")) {
-            Intent userIntent = new Intent(this, User.class);
+        } else if (username.equals("cashier")) {
+            Intent userIntent = new Intent(this, Cashier.class);
             startActivity(userIntent);
         } else if (username.equals("chef")) {
             Intent userIntent = new Intent(this, Chef.class);
